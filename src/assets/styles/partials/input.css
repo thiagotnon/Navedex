@@ -1,0 +1,30 @@
+.form-control {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 30px;
+}
+
+.form-control label {
+  width: 100%;
+  font-weight: 600;
+  font-size: 14px;
+  padding-bottom: 6px;
+}
+
+.form-control input {
+  border: 1px solid var(--nave--black);
+  padding: 12px;
+  font-size: 16px;
+}
+
+.message-error {
+  width: auto;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  border-color: red;
+  color: red;
+  font-size: 12px;
+  padding: 6px;
+  background: rgb(255, 225, 225);
+}

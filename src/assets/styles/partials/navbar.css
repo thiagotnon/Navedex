@@ -1,0 +1,17 @@
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1216px;
+  padding: 15px;
+}
+.navbar .brand img {
+  width: 145px;
+}

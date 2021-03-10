@@ -1,0 +1,46 @@
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--nave--black);
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  font-size: 14px;
+}
+
+.btn {
+  padding: 14px 40px;
+  transition: all 0.6s;
+}
+.btn:hover {
+  opacity: 0.6;
+}
+
+.btn-nave {
+  background-color: var(--nave--black);
+  color: var(--nave--white);
+  font-weight: 600;
+  float: right;
+}
+.btn-nave-outline {
+  background: transparent;
+  border: 2px solid var(--nave--black);
+  color: var(--nave--black);
+  font-weight: 600;
+  padding: 12px 40px;
+}
+
+.btn-with-icon {
+  background: transparent;
+  margin-right: 10px;
+}
+
+.btn-exit {
+  font-size: 14px;
+  font-weight: 600;
+  background: transparent;
+  padding: 15px;
+}

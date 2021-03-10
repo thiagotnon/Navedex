@@ -1,0 +1,22 @@
+.message {
+  background-color: rgb(255, 225, 225);
+  color: red;
+  padding: 15px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  position: fixed;
+  width: 100%;
+}
+.message.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 0;
+}
+
+.message-not-found {
+  background-color: var(--nave--ligth-grey);
+  width: 100%;
+  padding: 6px;
+}

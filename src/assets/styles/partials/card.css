@@ -1,0 +1,33 @@
+.card {
+  width: 25%;
+  padding: 0.5em;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+.card .btn-detail {
+  max-width: 280px;
+}
+.card .btn-detail img {
+  filter: grayscale();
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  transition: all 0.6s;
+}
+
+.card .btn-detail:hover img {
+  filter: none;
+}
+
+.card-body {
+  text-align: left;
+}
+.card .card-body h4 {
+  margin-top: 16px;
+}
+.card .card-body p {
+  margin-top: 4px;
+}
+.card .card-footer {
+  margin-top: 6px;
+}

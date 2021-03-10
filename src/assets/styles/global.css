@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Montserrat", sans-serif;
+}
+*:focus {
+  outline: none;
+}
+
+:root {
+  --nave--black: #000;
+  --nave--white: #fff;
+  --nave--ligth-grey: #f3f3f3;
+}
+#root {
+  width: 100%;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+@import "./partials/card.css";
+@import "./partials/input.css";
+@import "./partials/navbar.css";
+@import "./partials/button.css";
+@import "./partials/layout.css";
+@import "./partials/modal.css";
+@import "./partials/message.css";
+
+@media screen and (max-width: 480px) {
+  .list-nave-cards {
+    padding: 0;
+  }
+  .list-nave-cards .card {
+    width: 100% !important;
+  }
+  .list-nave-cards .card .btn-detail {
+    min-width: 100%;
+  }
+  .modal .modal-message {
+    margin: 10px;
+  }
+  .modal-footer {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .list-nave-cards .card {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal .modal-body .close {
+    top: 15px;
+    right: 15px;
+  }
+
+  .modal .modal-body {
+    margin: 15px;
+  }
+  .modal .modal-body .close {
+    z-index: 999;
+  }
+  .modal .modal-body .detail {
+    display: block;
+    background: var(--nave--white);
+    height: 100%;
+  }
+  .list-nave-cards .card {
+    width: 100%;
+    padding: 0;
+  }
+  .list-nave-cards .card .btn-detail {
+    min-width: 100%;
+  }
+  .list-nave-cards .card .btn-detail img {
+    width: 100%;
+    height: 360px;
+  }
+
+  .box-form {
+    width: 100%;
+  }
+  .box-form .form .box-form-content .form-control {
+    min-width: 100%;
+  }
+  .login-container .content .box-content .card-login {
+    width: 300px;
+  }
+  .box-form .form .box-form-content .form-control {
+    width: 100%;
+  }
+  .modal .modal-body .modal-content {
+    width: 100%;
+    display: block;
+    height: 100%;
+  }
+  .modal .modal-body .modal-content .naver-image img {
+    height: 350px;
+  }
+  .modal .modal-body .modal-content .naver-info {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .list-nave-cards {
+    padding: 0;
+  }
+  .list-nave-cards .card {
+    min-width: 48%;
+  }
+  .list-nave-cards .card .btn-detail {
+    max-width: 100%;
+  }
+  .list-nave-cards .card .card-header img {
+    width: 100%;
+    min-height: 400px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .list-nave-cards .card {
+    width: 300px;
+    padding: 0;
+  }
+  .list-nave-cards .card .btn-detail {
+    min-width: 100%;
+  }
+  .list-nave-cards .card .card-header img {
+    width: 100%;
+    height: 320px;
+  }
+}

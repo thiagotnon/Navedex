@@ -1,0 +1,31 @@
+.box-form {
+  height: 80vh;
+  width: 600px;
+  margin: auto;
+}
+
+.box-form .box-form-header {
+  display: flex;
+  align-items: center;
+}
+
+.box-form .box-form-header img {
+  width: 25px;
+  display: flex;
+  margin-right: 15px;
+}
+
+.box-form .form .box-form-content {
+  margin-top: 15px;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+}
+.box-form .form .box-form-content .form-control {
+  width: 100%;
+  max-width: 48% !important;
+}
+
+.form .btn {
+  float: right;
+}

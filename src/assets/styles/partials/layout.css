@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+}
+
+.container .content {
+  width: 100%;
+  max-width: 1216px;
+}
+
+.container .content .section-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.list-nave-cards {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.list-nave-cards:after {
+  content: "";
+  flex: auto;
+}
+.list-nave-cards button {
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.login-container {
+  height: 80vh;
+}
+.login-container .content {
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--nave--black);
+  width: 400px;
+  padding: 35px;
+}
+.login-container .content .box-content .card-login {
+  width: 380px;
+}
+
+.login-container .content .box-content .card-login .brand-login {
+  padding: 15px 0 40px;
+  text-align: center;
+}
+.login-container .content .box-content .card-login .form .btn {
+  width: 100%;
+}
+.box-form-header {
+  display: flex;
+  align-items: center;
+}
+.box-form-header .btn-with-icons {
+  display: flex;
+  margin-right: 15px;
+}
+
+.box-form {
+  width: 800px;
+  margin: auto;
+}
+.box-form .form {
+  margin-top: 50px;
+}
+
+.box-form .form .box-form-content {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+}
+
+.box-form .form .box-form-content .form-control {
+  width: 48%;
+}
