@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import DetailInfo from '../DetailInfo';
 import closeIcon from '../../assets/img/close_icon.svg';
 import deletIcon from '../../assets/img/delete_icon.svg';
-import editIcon from '../../assets/img/edit_icon.svg'
+import editIcon from '../../assets/img/edit_icon.svg';
 
 export default function Modal(props) {
   const { className, modalRef } = props;

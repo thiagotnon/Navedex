@@ -7,6 +7,7 @@ import api from '../Services/Api';
 import actionsMessage from '../Helpers/messages';
 
 import defaultIMG from '../assets/img/default_thumbnail.svg';
+import spinerIMG from '../assets/img/nave.svg';
 
 export default function Home() {
   const [naver, setNaver] = React.useState({});
@@ -17,9 +18,14 @@ export default function Home() {
   const [confirmMmessage, setConfirmMessage] = React.useState('');
   const [afterExcludeMessage, setAfterExcludeMessage] = React.useState('');
 
+  const [loading, setLoading] = React.useState(false)
+
+
   React.useEffect(() => {
+    setLoading(true)
     api.get('navers').then(response => {
       setNavers(response.data);
+      setLoading(false)
     });
   }, [])
 
@@ -69,22 +75,26 @@ export default function Home() {
       <Page title="Navers" button_name="Adicionar Naver" link="add-naver">
         <div className="list-nave-cards">
           <>
-            {navers.length === 0 ?
-              <span className="message-not-found">
-                Nenhum <strong>naver</strong> cadastrado.
+            {loading ? <img className="spinner" src={spinerIMG} alt="Spinner" width="100" /> :
+              <>
+                {navers.length === 0 ?
+                  <span className="message-not-found">
+                    Nenhum <strong>naver</strong> cadastrado.
               </span>
-              : <>
-                {orderNavers.map(naver => (
-                  <CardNaver
-                    key={naver.id}
-                    id={naver.id}
-                    image={naver.url ? naver.url : defaultIMG}
-                    name={naver.name}
-                    position={naver.job_role}
-                    exclude={ExcludeNaver}
-                    detail={NaverDetail}
-                  />
-                ))}
+                  : <>
+                    {orderNavers.map(naver => (
+                      <CardNaver
+                        key={naver.id}
+                        id={naver.id}
+                        image={naver.url ? naver.url : defaultIMG}
+                        name={naver.name}
+                        position={naver.job_role}
+                        exclude={ExcludeNaver}
+                        detail={NaverDetail}
+                      />
+                    ))}
+                  </>
+                }
               </>
             }
           </>

@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
-
-import logoIMG from '../assets/img/logo.svg'
-
 import { isAuthenticated, logout } from '../Services/Auth';
+import logoIMG from '../assets/img/logo.svg';
 
 function Navbar(props) {
 

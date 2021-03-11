@@ -2,7 +2,6 @@ import React from 'react';
 import { mask, unMask } from 'remask';
 
 export default function Input(props) {
-
   const id = props.id ? props.id : props.name;
   const { errors, register, validator, setValue } = props.reference;
   const required = () => validator[props.name]?.required ? <span className="text-danger">*</span> : '';

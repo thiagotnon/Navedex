@@ -32,10 +32,8 @@ export default function NaverForm(props) {
       setModal('active')
       if (naverData.id) {
         setMessage(actionsMessage.updateNaverConfirm);
-        setNaverData('');
       } else {
         setMessage(actionsMessage.createNaverConfirm);
-        setNaverData('');
       }
     }).catch(error => {
       setModal('active');
@@ -56,7 +54,7 @@ export default function NaverForm(props) {
             <Link className="btn-with-icons" to="/">
               <img src={arrowLeftIMG} alt="Back" />
             </Link>
-            <h2>Adicionar Naver</h2>
+            <h2>{naverData.id ? 'Editar' : 'Adicionar'} Naver</h2>
           </header>
           <form className="form" onSubmit={handleSubmit(onSubmit)}>
             <div className="box-form-content">
