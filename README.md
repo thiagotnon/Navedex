@@ -5,7 +5,7 @@
 > A Navedex é um projeto de gerenciamento dos Navers.
 > O projeto requer autenticação e por isso, o usuário deve estar registrado para cadastrar, editar e excluir Navers.
 
-#### Tecnologias
+#### Tecnologias utilizadas
 
 - [react](https://pt-br.reactjs.org)
 - [axios](https://github.com/axios/axios)
@@ -14,9 +14,9 @@
 
 #### Funcionalidades
 
-- Criar
-- Editar
-- Excluir
+- criar
+- editar
+- excluir
 
 ## Para executar a Navedex
 
