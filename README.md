@@ -2,7 +2,7 @@
 
 # Navedex
 
-> A Navedex é um projeto de gerenciamento dos Navers.
+> Navedex é um projeto de gerenciamento dos Navers.
 > O projeto requer autenticação e por isso, o usuário deve estar registrado para cadastrar, editar e excluir Navers.
 
 #### Tecnologias utilizadas
@@ -18,7 +18,7 @@
 - editar
 - excluir
 
-## Para executar a Navedex
+## Para executar o Navedex
 
 1.Clone o projeto:
 
@@ -32,7 +32,7 @@ git clone https://github.com/thiagotnon/Navedex.git
 yarn ou yarn install
 ```
 
-3.Rode a Navedex
+3.Rode o Navedex
 
 ```
 yarn start
