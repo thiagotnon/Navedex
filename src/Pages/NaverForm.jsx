@@ -15,8 +15,8 @@ export default function NaverForm(props) {
   const [message, setMessage] = React.useState({});
   const [naverData, setNaverData] = React.useState({});
 
-  const { register, handleSubmit, errors } = useForm();
-  const reference = { register, validator, errors };
+  const { register, handleSubmit, errors, setValue } = useForm();
+  const reference = { register, validator, errors, setValue };
 
   React.useEffect(() => {
     const id = props.match.params.id;

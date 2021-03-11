@@ -12,8 +12,8 @@ import logoIMG from '../assets/img/logo.svg';
 function Login(props) {
   const [errorMessage, setErrorMessage] = React.useState('');
   const [showMessage, setShowMessage] = React.useState('');
-  const { register, handleSubmit, errors } = useForm();
-  const reference = { register, validator, errors };
+  const { register, handleSubmit, errors, setValue } = useForm();
+  const reference = { register, validator, errors, setValue };
 
   React.useState(() => {
     const data = localStorage.getItem('navers_token');
