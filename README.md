@@ -32,7 +32,7 @@ git clone https://github.com/thiagotnon/Navedex.git
 yarn ou yarn install
 ```
 
-3.Rode o Navedex
+3.Rode a Navedex
 
 ```
 yarn start
