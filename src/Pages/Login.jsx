@@ -19,6 +19,8 @@ function Login(props) {
     const data = localStorage.getItem('navers_token');
     if (data) {
       props.history.push("/");
+    } else {
+      /*  document.getElementsByName('email').focus() */
     }
   }, []);
 
@@ -49,7 +51,7 @@ function Login(props) {
             <img src={logoIMG} alt="nave.rs" />
           </div>
           <form className="form" onSubmit={handleSubmit(onSubmit)}>
-            <Input label="E-mail" type="email" name="email" id="email" placeholder="E-mail" reference={reference} />
+            <Input label="E-mail" type="email" name="email" id="email" placeholder="E-mail" reference={reference} autoFocus />
             <Input label="Senha" type="password" name="password" id="password" placeholder="Senha" reference={reference} />
             <button className="btn btn-nave" type="submit">Entrar</button>
           </form>

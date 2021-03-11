@@ -8,7 +8,7 @@
   max-width: 280px;
 }
 .card .btn-detail img {
-  filter: grayscale();
+  filter: grayscale(100%);
   width: 280px;
   height: 280px;
   object-fit: cover;
@@ -16,7 +16,7 @@
 }
 
 .card .btn-detail:hover img {
-  filter: none;
+  filter: grayscale(0);
 }
 
 .card-body {
